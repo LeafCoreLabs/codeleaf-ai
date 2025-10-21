@@ -7,70 +7,83 @@
 ---
 
 ## 📌 About
-**CodeLeaf AI** is an eco-conscious coding assistant that helps developers measure and reduce the **carbon footprint of their software**.  
-Built by students, for students and professionals, it combines **AI-powered code generation, optimization, and sustainability insights** to promote greener development practices.
 
-This is the **MVP (Phase 1)** release — lightweight, cost-effective, and powered entirely by **open-source + free-tier tools**.
+**CodeLeaf AI** is an **AI-powered platform** that measures and optimizes the **carbon footprint of software**.  
+It empowers developers and enterprises to write **energy-efficient code**, track emissions, and align coding activities with **Environmental, Social, and Governance (ESG) goals**.  
 
----
-
-## ✨ Major Functionalities
-
-1. ⚡ **Eco-Friendly Coding Insights**  
-   - Track **energy usage & CO₂ emissions** using CodeCarbon.  
-   - Compare “green scores” of different solutions (recursion vs iteration).  
-   - Suggest eco-efficient libraries and methods.  
-
-2. 🤖 **AI Code Assistant**  
-   - Generate and explain code from natural prompts.  
-   - Debug and provide **optimized versions** of inefficient code.  
-   - Support multiple languages (Python, JS, Java, C++).  
-   - AI-driven best practices for efficiency & readability.  
-
-3. 📊 **Developer Dashboard**  
-   - Personalized **Green Report** after each run.  
-   - Weekly stats for **energy saved & CO₂ reduced**.  
-   - Interactive **charts & visualizations** (Streamlit + Plotly).  
-
-4. 🌍 **Eco-Aware Recommendations**  
-   - Integration with APIs like **Electricity Maps** (planned).  
-   - Show when running compute-heavy jobs is “greenest” (based on renewable share).  
-
-5. 🧠 **Learning & Community Features** *(upcoming)*  
-   - Built-in **green coding tutorials**.  
-   - “Did you know?” tips (e.g., vectorized NumPy vs loops).  
-   - Share **green badges** on GitHub/LinkedIn.  
+Built for students, professionals, and teams, CodeLeaf AI provides **actionable insights, AI-driven code optimization, and ESG-compliant reporting** to foster sustainable software development.
 
 ---
 
-## 🚀 Development Roadmap
+## ✨ Key Functionalities
 
-### ✅ Phase 1 – MVP (Current Stage)
-- Core eco-tracking with **CodeCarbon**.  
-- AI Code Assistant via **Hugging Face Free API**.  
-- Flask backend + Streamlit frontend.  
-- Localhost + LAN deployment.  
-- Branding: logo + slogan + basic landing page.  
+### Phase 1 — Core ESG Features (MVP)
+- Multi-language carbon estimation (Python, C, C++, Java, JavaScript, SQL).  
+- Automatic detection of programming language.  
+- Code optimization suggestions to reduce CO₂ footprint.  
+- Real-time dashboard with:
+  - Estimated CO₂ (kg)  
+  - Energy consumption (kWh)  
+  - Environmental equivalents (e.g., powering a 10W LED)  
+  - Session-level emission trends.  
+---
 
-### ⚡ Phase 2 – Beta Release
-- Add multi-language support (Python + JS at least).  
-- Smarter AI agent with LangChain / LlamaIndex for code Q&A.  
-- Weekly “Green Reports” with efficiency tips.  
-- Gamified **Green Badges** for eco-efficient coding.  
-- Carbon-aware job scheduling with **Electricity Maps API**.  
+### Phase 2 — ESG Insight Layer
+- Auto-generated ESG reports (PDF/HTML) for each coding session.  
+- Eco-efficiency scoring combining code performance and emissions.  
+- ESG Compliance Badges (Bronze, Silver, Gold based on emission reduction).  
+- Developer profiles with gamification and leaderboards.  
+- Emission budgeting & alerts for sustainable coding thresholds.  
 
-### 🌍 Phase 3 – Full Release
-- **AI Pair Programmer** (Copilot but eco-aware).  
-- Enterprise dashboards for dev teams.  
-- Community + snippet marketplace.  
-- Leaderboards for “greenest coders.”  
-- Mobile app companion.  
-- Monetization (Freemium + Pro tier).  
+---
+
+### Phase 3 — Enterprise & Data Science Integration
+- ESG Data Integration APIs for SASB, GRI, TCFD frameworks.  
+- Smart recommendation engine: ML-powered code optimization suggestions.  
+- Green infrastructure awareness:
+  - Compare emissions across cloud regions, hardware setups, and runtime environments.  
+  - Suggest carbon-optimal deployment options.  
+
+---
+
+### Phase 4 — ESG Governance & Trust Layer
+- Carbon Credit Ledger (Blockchain integration) to record emission reduction events.  
+- Issue verifiable GreenNFTs for ESG audits.  
+- ESG Risk & Compliance Engine to flag emission-heavy code.  
+- Responsible AI Dashboard tracking AI model energy consumption.  
+- Community ESG Repository for sharing optimized green code.  
+- Gamified leaderboard to promote sustainable coding contributions.  
+
+---
+
+## 🚀 ESG-Centric Development Roadmap
+
+| Phase | Duration | Key Deliverables | ESG Impact |
+|-------|---------|----------------|-----------|
+| 1 – Core ESG Features | 1–2 months | Multi-language carbon estimation, code optimization suggestions, real-time dashboard | Direct measurement and optimization of emissions |
+| 2 – ESG Insight Layer | 2–3 months | ESG report generation, eco-efficiency scores, developer profiles | Actionable insights & awareness |
+| 3 – Enterprise Integration | 2–4 months | Enterprise APIs, smart recommendations, green deployment suggestions | Corporate ESG integration |
+| 4 – ESG Governance & Trust | 3–6 months | Blockchain ledger, ESG risk engine, responsible AI dashboard, community repo | Governance, transparency, sustainable ecosystem |
+
+**ESG Pillar Alignment**  
+
+- **Environmental:** Carbon estimation, optimization, green deployment  
+- **Social:** Developer profiles, gamification, community ESG repository  
+- **Governance:** Blockchain-based audit, ESG risk engine, responsible AI monitoring  
+
+**Investor Pitch Highlights**  
+
+- **Innovation:** First AI-driven code emission tracker for developers.  
+- **Sustainability:** Quantifies developer carbon footprint in real-time.  
+- **ESG Integration:** Aligns with corporate ESG frameworks (SASB, GRI, TCFD).  
+- **Scalability:** Multi-language, multi-cloud, enterprise-ready.  
+- **Gamification & Awareness:** Encourages sustainable coding habits globally.  
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** Streamlit (UI, Dashboard)  
+
+- **Frontend:** Streamlit (UI & Dashboard)  
 - **Backend:** Flask (Python API)  
 - **AI Models:** Hugging Face Inference API (Qwen, CodeT5, StarCoder)  
 - **Carbon Tracking:** CodeCarbon  
@@ -86,42 +99,40 @@ This is the **MVP (Phase 1)** release — lightweight, cost-effective, and power
 git clone https://github.com/<your-username>/codeleaf-ai.git
 cd codeleaf-ai
 ```
+2️⃣ Create Virtual Environment
 
-2️⃣ **Create Virtual Environment**
 ```bash
+Copy code
 python -m venv venv
 # Linux/Mac
 source venv/bin/activate
 # Windows
 venv\Scripts\activate
 ```
+3️⃣ Install Dependencies
 
-3️⃣ **Install Dependencies**
 ```bash
+Copy code
 pip install -r requirements.txt
 ```
+4️⃣ Add Hugging Face Token
 
-4️⃣ **Add Hugging Face Token**
-
-1.Create a free account at Hugging Face.
-2.Go to Access Tokens → generate a token (Read permissions).
-3.Create a .env file:
 ```bash
+Copy code
 HF_TOKEN=hf_xxxxxxxxxxxxxxxxx
 ```
+5️⃣ Run Backend
 
-5️⃣ **Run the Backend**
 ```bash
+Copy code
 cd backend
 python app.py
-# Backend available at http://127.0.0.1:5000
 ```
+6️⃣ Run Frontend
 
-6️⃣ **Run the Frontend**
 ```bash
+Copy code
 cd frontend
 streamlit run app.py
-# Localhost: http://localhost:8501
-# Network: http://192.168.29.77:8501
 ```
 <p align="center">Made with ❤️ by Leaf Core Labs</p> ```
